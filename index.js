@@ -10,6 +10,14 @@ const old = document.getElementById("mon_age")
 const couriel = document.getElementById("mon_mail")
 const identity = document.getElementById("mon_cin")
 
+
+let mon = document.getElementById("nomm")
+let monprenom = document.getElementById("prenomm")
+let votreage = document.getElementById("monage")
+let votremail = document.getElementById("monmail")
+let votrecin = document.getElementById("moncin")
+
+
 const boutton = document.getElementById("boutton")
 
 nom.onkeyup = function(){
@@ -42,17 +50,22 @@ cin.onkeyup = function(){
 boutton.onclick = function(){
     if(nom.value == ""){
         nom.style.borderColor = "red"
+        mon.style.color = "red"
     }
     if(prenom.value == ""){
         prenom.style.borderColor = "red"
+        monprenom.style.color = "red"
     }
     if(age.value == ""){
         age.style.borderColor = "red"
+        votreage.style.color = "red"
     }
     if(email.value == ""){
         email.style.borderColor = "red"
+        votremail.style.color = "red"
     }
     if(cin.value == ""){
         cin.style.borderColor = "red"
+        votrecin.style.color = "red"
     }
 }
